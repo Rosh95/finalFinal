@@ -11,37 +11,6 @@
     <title>Услуги и сервисы</title>
   </head>
   <body>
-    <header class="header">
-      <div class="header__container">
-        <div class="header__block">
-          <button class="btn header__btn">
-            <img src="img/burger.svg" alt="бургер меню" />
-          </button>
-          <div class="header__divider--invisible"></div>
-          <button class="header__logo">
-            <img src="img/Group.svg" alt="логотип" />
-          </button>
-        </div>
-        <div class="header__block">
-          <button class="btn header__btn--invisible-mobile header__feedback-call">
-            <img src="img/call.svg" alt="телефон" />
-          </button>
-          <button class="btn header__btn--invisible-mobile header__feedback">
-            <img src="img/chat.svg" alt="чат" />
-          </button>
-          <button class="btn header__btn--invisible-mobile">
-            <img src="img/profile.svg" alt="профиль" />
-          </button>
-          <div class="header__divider"></div>
-          <button class="btn header__btn">
-            <img src="img/repair.svg" alt="ремонт" />
-          </button>
-          <button class="btn">
-            <img src="img/checkstatus.svg" alt="проверить статус" />
-          </button>
-        </div>
-      </div>
-    </header>
     <aside class="burger-menu">
       <div class="burger-menu__block">
         <div class="burger-menu__container">
@@ -141,6 +110,38 @@
           </div>
       </div>
     </aside>
+    <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <div class="header__block">
+          <button class="btn header__btn">
+            <img src="img/burger.svg" alt="бургер меню" />
+          </button>
+          <div class="header__divider--invisible"></div>
+          <button class="header__logo">
+            <img src="img/Group.svg" alt="логотип" />
+          </button>
+        </div>
+        <div class="header__block">
+          <button class="btn header__btn--invisible-mobile header__feedback-call">
+            <img src="img/call.svg" alt="телефон" />
+          </button>
+          <button class="btn header__btn--invisible-mobile header__feedback">
+            <img src="img/chat.svg" alt="чат" />
+          </button>
+          <button class="btn header__btn--invisible-mobile">
+            <img src="img/profile.svg" alt="профиль" />
+          </button>
+          <div class="header__divider"></div>
+          <button class="btn header__btn">
+            <img src="img/repair.svg" alt="ремонт" />
+          </button>
+          <button class="btn">
+            <img src="img/checkstatus.svg" alt="проверить статус" />
+          </button>
+        </div>
+      </div>
+    </header>
     <header class="header-desktop">
       <div class="header-desktop__container">
         <div class="header-desktop__block">
@@ -382,7 +383,6 @@
           <button class="services__btn">Показать все</button>
         </div>
         </div>
-      </div>
     </section>
 
     <section class="prices-swiper"> 
@@ -436,12 +436,13 @@
       </div>
       </div>
       <div class="prices">
-      <div class="prices__list">
-        <div class="prices__list-description">
+        <div class="prices__description-list">
           <div class="prices__name">Ремонтные услуги</div>
           <div class="price__amount">Цена</div>
           <div class="price__term">Срок</div>
+          <div class="prices__empty-space"></div>
         </div>
+      <div class="prices__list">
         <div class="prices__item">
           <div class="prices__name">Диагностика</div>
           <div class="price__amount">Бесплатно</div>
@@ -451,8 +452,8 @@
             <img class="prices__btn--go" src="img/dropdown.svg" alt="стрелка" />
           </button>
             </div>
-                 <div class="prices__item">
-          <div class="prices__name">Диагностика</div>
+          <div class="prices__item">
+          <div class="prices__name">Замена дисплея</div>
           <div class="price__amount">1000р</div>
           <div class="price__term">30-120 минут</div>
           <button class="prices__btn">
@@ -461,7 +462,7 @@
           </button>
             </div>
     <div class="prices__item">
-          <div class="prices__name">Диагностика</div>
+          <div class="prices__name">Замена полифонического динамика</div>
           <div class="price__amount">1000р</div>
           <div class="price__term">30-120 минут</div>
           <button class="prices__btn">
@@ -470,7 +471,7 @@
           </button>
             </div>
             <div class="prices__item">
-          <div class="prices__name">Диагностика</div>
+          <div class="prices__name">Тестирование с выдачей технического заключения</div>
           <div class="price__amount">1000р</div>
           <div class="price__term">30-120 минут</div>
           <button class="prices__btn">
@@ -479,7 +480,7 @@
           </button>
             </div>
             <div class="prices__item">
-          <div class="prices__name">Диагностика</div>
+          <div class="prices__name">Замена программного обеспечения</div>
           <div class="price__amount">1000р</div>
           <div class="price__term">30-120 минут</div>
             <button class="prices__btn">
@@ -515,6 +516,8 @@
       <p class="footer__text">Информация, размещенная на данной странице, не является публичной офертой</p>
       </div>
     </footer>
+  </div>
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="/src/js/index.js"></script>
   </body>

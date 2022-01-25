@@ -23,10 +23,11 @@ html {
   font-weight: normal;
   font-style: italic;
 }
-
-body {
+.wrapper {
   min-width: 320px;
   max-width: 1440px;
+}
+body {
   font-size: 14px;
   font-family: "TT Lakes", sans-serif;
   font-style: normal;
@@ -401,14 +402,15 @@ button {
   }
 }
 @media (min-width: 1440px) {
-  body {
+  .wrapper {
     margin-left: auto;
     margin-right: auto;
   }
+  .menu__list {
+    height: 100px;
+  }
 }
-.menu__list {
-  height: 100px;
-}
+
 .body-opacity {
   opacity: 0.05;
 }
