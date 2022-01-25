@@ -1,0 +1,253 @@
+.swiper__price-btn {
+  background-color: $color_pink;
+  color: $color-white;
+  width: 136px;
+  border-radius: 16px;
+  padding: 4px;
+}
+.prices-swiper {
+  min-width: 320px;
+  font-size: 14px;
+  font-family: 'TT Lakes', sans-serif;
+  font-style: normal;
+  margin: 0px;
+  background: #f2f2f2;
+  @media (min-width: 1440px) {
+    margin-left: 306px;
+  }
+}
+.prices-title {
+  width: 100%;
+  background-color: white;
+  border-top: 1px solid #d9fff5;
+}
+
+.prices-title__name {
+  padding: 16px;
+  margin: 0;
+  font-family: TT Lakes;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7e7e82;
+}
+
+.swiper__service--icon-go {
+  position: relative;
+  bottom: 16px;
+  right: 16px;
+}
+
+.swiper-slide {
+  width: 224px;
+  height: 160px;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.swiper__service-name {
+  position: relative;
+  top: 16px;
+  left: 16px;
+}
+.swiper {
+  display: flex;
+  width: 320px;
+  height: 260px;
+  justify-content: space-between;
+}
+.swiper-wrapper {
+  background-color: #f2f2f2;
+  margin-left: 16px;
+  margin-top: 16px;
+}
+
+.swiper-slide:last-of-type {
+  padding-right: 0;
+}
+.swiper-pagination {
+  transform: translate(0px, -30px);
+}
+.swiper-pagination-bullet-active {
+  background-color: gray;
+}
+
+.swiper-pagination-bullets {
+  color: #b5b6bc;
+}
+.prices__explanation {
+  display: block;
+  padding: 24px 0 47px 24px;
+  &--text {
+    width: 421px;
+    height: 60px;
+    line-height: 20px;
+    margin-bottom: 16px;
+  }
+  &--commercial {
+    color: #1b1c21;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &--commercial-go {
+    margin-left: 10px;
+  }
+  &--commercial-link {
+    text-decoration: none;
+    color: $color_black;
+  }
+}
+.prices {
+  display: none;
+  @media (min-width: 768px) {
+    display: inline;
+  }
+}
+.prices__text {
+  align-self: flex-start;
+}
+.prices__icon--go {
+  align-self: flex-end;
+}
+
+@media (min-width: 480px) {
+  .prices-title__name {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .prices-title__name {
+    text-align: left;
+  }
+  .prices-title {
+    width: 100%;
+    background: linear-gradient(90deg, #f8f8f8 1.39%, #ffffff 100%);
+  }
+  .swiper {
+    display: none;
+  }
+
+  .prices__item {
+    display: grid;
+    height: 64px;
+    width: 100%;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 24px;
+    line-height: 18px;
+    background-color: $color-white;
+    border-radius: 6px;
+    grid-template-columns: 3.8fr 1.2fr 1.2fr 1fr;
+    border-bottom: 1px solid $color-grey;
+  }
+
+  .prices__list-description {
+    display: grid;
+    height: 64px;
+    width: 100%;
+    color: #7e7e82;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-top: 31px;
+    padding-bottom: 16px;
+    grid-template-columns: 3.8fr 1.2fr 1.1fr 1.1fr;
+  }
+}
+
+.prices__list {
+  display: block;
+}
+
+.prices__list {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.prices__list--height {
+  height: auto;
+  transition-duration: 10s;
+}
+.prices__footer {
+  padding-left: 24px;
+  padding-bottom: 10px;
+}
+
+/* .prices__btn {
+  background: transparent;
+  border: none !important;
+  color: #1b1c21;
+  white-space: nowrap;
+  font-size: 16px;
+  font-family: 'TT Lakes', sans-serif;
+  font-weight: bold;
+  line-height: 18px;
+  color: #1b1c21;
+  margin-top: 10px;
+  padding-left: 16px;
+  cursor: pointer;
+} */
+
+.prices__btn {
+  display: flex;
+  justify-content: space-between;
+  background-color: $color_pink;
+  color: $color-white;
+  width: 119px;
+  border-radius: 16px;
+  padding: 4px;
+  &--text {
+    padding-left: 11px;
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-right: 5px;
+  }
+  &--go {
+    padding-right: 11px;
+    align-self: center;
+  }
+}
+
+.prices__arrow {
+  margin: auto 0px auto 0px;
+  width: 8px;
+  height: 11px;
+}
+
+/* @media (min-width: 1120px) {
+  .prices__list {
+    padding: 32px;
+    padding-right: 0px;
+  }
+  /*   .prices__item {
+    width: 240px;
+    margin-right: 32px;
+    margin-bottom: 16px;
+  }
+ 
+  .prices__arrow {
+    margin: auto 0px auto 0px;
+  }
+  .prices__footer {
+    padding-left: 32px;
+  } */
+@media (min-width: 1440px) {
+  .prices__item {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .prices__arrow {
+    margin: auto 0px auto 0px;
+  }
+  .prices__footer {
+    padding-left: 32px;
+  }
+  .prices__list-description {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+}
