@@ -1,12 +1,34 @@
 let burgerMenuItem = document.querySelector(".header__btn");
 let burgerMenu = document.querySelector(".burger-menu ");
 let burgerMenuClose = document.querySelector(".burger-menu__btn");
-let bodyOpacity = document.querySelector(".wrapper");
+let bodyOpacity = document.querySelector(".wrapper__main-content");
 
+const toggleMenu = function () {
+  burgerMenu.classList.toggle("burger-menu--show");
+  bodyOpacity.classList.toggle("body-opacity");
+};
+
+burgerMenuItem.addEventListener("click", function (e) {
+  e.stopPropagation();
+  toggleMenu();
+});
+
+document.addEventListener("click", function (e) {
+  const target = e.target;
+  const its_menu = target == burgerMenu || burgerMenu.contains(target);
+  const its_btnMenu = target == burgerMenuItem;
+  const menu_is_active = burgerMenu.classList.contains("burger-menu--show");
+
+  if (!its_menu && !its_btnMenu && menu_is_active) {
+    toggleMenu();
+  }
+});
+/* 
 burgerMenuItem.addEventListener("click", function () {
   burgerMenu.classList.add("burger-menu--show");
-  bodyOpacity.classList.add("body-opacity");
+  //bodyOpacity.classList.add("body-opacity");
 });
+*/
 burgerMenuClose.addEventListener("click", function () {
   burgerMenu.classList.remove("burger-menu--show");
   bodyOpacity.classList.remove("body-opacity");

@@ -11,106 +11,108 @@
     <title>Услуги и сервисы</title>
   </head>
   <body>
-    <aside class="burger-menu">
-      <div class="burger-menu__block">
-        <div class="burger-menu__container">
-          <button class="btn burger-menu__btn">
+ 
+    <div class="wrapper">
+      <aside class="burger-menu">
+        <div class="burger-menu__block">
+          <div class="burger-menu__container">
+            <button class="btn burger-menu__btn">
+              <img src="img/x.svg" alt="значок x" />
+            </button>
+            <a href="#" class="burger-menu__logo">
+              <img src="img/logo.svg" alt="Логотип" />
+            </a>
+            <button class="btn burger-menu__btn">
+              <img src="img/search.svg" alt="значок поиска" />
+            </button>
+          </div>
+          <section>
+            <ul class="burger-menu__list">
+              <li class="burger-menu__item"><a href="#" class="burger-menu__link" href="#">Ремонт техники</a></li>
+              <li class="burger-menu__item"><a href="#" class="burger-menu__link" href="#">Услуги и сервисы</a></li>
+              <li class="burger-menu__item"><a href="#" class="burger-menu__link" href="#">Корпоративным клиентам</a></li>
+              <li class="burger-menu__item"><a href="#" class="burger-menu__link" href="#">Продавцам техники</a></li>
+              <li class="burger-menu__item"><a href="#" class="burger-menu__link" href="#">Партнерам</a></li>
+              <li class="burger-menu__item"><a href="#" class="burger-menu__link" href="#">Производителям</a></li>
+              <li class="burger-menu__item"><a href="#" class="burger-menu__link" href="#">Наши сервисные центры</a></li>
+              <li class="burger-menu__item"><a href="#" class="burger-menu__link" href="#">Контакты</a></li>
+            </ul>
+          </section>
+        </div>
+        <div class="burger-menu__footer">
+          <div class="burger-menu__btns">
+            <button class="btn burger-menu__btn--call">
+              <img src="img/call.svg" alt="img repair" />
+            </button>
+            <button class="btn burger-menu__btn--message">
+              <img src="img/chat.svg" alt="checkstatus" />
+            </button>
+            <button class="btn">
+              <img src="img/profile.svg" alt="checkstatus" />
+            </button>
+          </div>
+          <p class="burger-menu__email"><a class="burger-menu__email--link" href="mailto:mail@cps.com">mail@cps.com</a></p>
+          <p class="burger-menu__phone"><a class="burger-menu__phone--link" href="tel:+8 800 890 8900">8 800 890 8900</a></p>
+          <ul class="burger-menu__language">
+            <li class="burger-menu__language--item"><button class="burger-menu__language--link">RU</button></li>
+            <li class="burger-menu__language--item"><button class="burger-menu__language--link">EN</button></li>
+            <li class="burger-menu__language--item"><button class="burger-menu__language--link">CH</button></li>
+          </ul>
+        </footer>
+      </aside>
+      
+      <aside class="feedback">
+        <div class="feedback__container">
+          <button class="btn feedback__btn">
             <img src="img/x.svg" alt="значок x" />
           </button>
-          <a href="#" class="burger-menu__logo">
-            <img src="img/logo.svg" alt="Логотип" />
-          </a>
-          <button class="btn burger-menu__btn">
-            <img src="img/search.svg" alt="значок поиска" />
+          <form class="feedback__area">
+     
+            <h2 class="feedback__text">Обратная связь</h2>
+            <input class="feedback__item" type="text" name="name" placeholder="Имя">
+            <input class="feedback__item" type="number" name="number" placeholder="Номер телефона">
+            <input class="feedback__item" type="email" name="email" placeholder="Электронная почта">
+            <textarea class="feedback__item feedback__item--textarea" name="comment" placeholder="Сообщение"></textarea>
+          </form>
+          <p class="feedback__footer"> Нажимая “отправить”, 
+            вы даете согласие на <span class="feedback__footer--pink">обработку</span>  
+            <span class="feedback__footer--pink">персональных данных</span>   и соглашаетесь с нашей
+            <span class="feedback__footer--pink">политикой конфиденциальности</span>
+            </p>
+            <div class="feedback__footer-box">
+              <button class="feedback__footer-btn">
+            <span class="feedback__footer-btn--text">Отправить</span> 
+            <img class="feedback__footer-btn--go" src="img/dropdown.svg" alt="стрелка" />
           </button>
+            </div>
         </div>
-        <section>
-          <ul class="burger-menu__list">
-            <li class="burger-menu__item"><a href="#" class="burger-menu__link" href="#">Ремонт техники</a></li>
-            <li class="burger-menu__item"><a href="#" class="burger-menu__link" href="#">Услуги и сервисы</a></li>
-            <li class="burger-menu__item"><a href="#" class="burger-menu__link" href="#">Корпоративным клиентам</a></li>
-            <li class="burger-menu__item"><a href="#" class="burger-menu__link" href="#">Продавцам техники</a></li>
-            <li class="burger-menu__item"><a href="#" class="burger-menu__link" href="#">Партнерам</a></li>
-            <li class="burger-menu__item"><a href="#" class="burger-menu__link" href="#">Производителям</a></li>
-            <li class="burger-menu__item"><a href="#" class="burger-menu__link" href="#">Наши сервисные центры</a></li>
-            <li class="burger-menu__item"><a href="#" class="burger-menu__link" href="#">Контакты</a></li>
-          </ul>
-        </section>
-      </div>
-      <div class="burger-menu__footer">
-        <div class="burger-menu__btns">
-          <button class="btn burger-menu__btn--call">
-            <img src="img/call.svg" alt="img repair" />
+      </aside>
+      
+      <aside class="feedback-call">
+        <div class="feedback-call__container">
+          <button class="btn feedback-call__btn">
+            <img src="img/x.svg" alt="значок x" />
           </button>
-          <button class="btn burger-menu__btn--message">
-            <img src="img/chat.svg" alt="checkstatus" />
+          <form class="feedback-call__area">
+     
+            <h2 class="feedback-call__text">Обратная связь</h2>
+            <input class="feedback__item" type="number" name="number" placeholder="Номер телефона">
+            
+          </form>
+          <p class="feedback-call__footer"> Нажимая “отправить”, 
+            вы даете согласие на <span class="feedback-call__footer--pink">обработку</span>  
+            <span class="feedback-call__footer--pink">персональных данных</span>   и соглашаетесь с нашей
+            <span class="feedback-call__footer--pink">политикой конфиденциальности</span>
+            </p>
+            <div class="feedback-call__footer-box">
+              <button class="feedback-call__footer-btn">
+            <span class="feedback-call__footer-btn--text">Отправить</span> 
+            <img class="feedback-call__footer-btn--go" src="img/dropdown.svg" alt="стрелка" />
           </button>
-          <button class="btn">
-            <img src="img/profile.svg" alt="checkstatus" />
-          </button>
+            </div>
         </div>
-        <p class="burger-menu__email"><a class="burger-menu__email--link" href="mailto:mail@cps.com">mail@cps.com</a></p>
-        <p class="burger-menu__phone"><a class="burger-menu__phone--link" href="tel:+8 800 890 8900">8 800 890 8900</a></p>
-        <ul class="burger-menu__language">
-          <li class="burger-menu__language--item"><button class="burger-menu__language--link">RU</button></li>
-          <li class="burger-menu__language--item"><button class="burger-menu__language--link">EN</button></li>
-          <li class="burger-menu__language--item"><button class="burger-menu__language--link">CH</button></li>
-        </ul>
-      </footer>
-    </aside>
-    
-    <aside class="feedback">
-      <div class="feedback__container">
-        <button class="btn feedback__btn">
-          <img src="img/x.svg" alt="значок x" />
-        </button>
-        <form class="feedback__area">
-   
-          <h2 class="feedback__text">Обратная связь</h2>
-          <input class="feedback__item" type="text" name="name" placeholder="Имя">
-          <input class="feedback__item" type="number" name="number" placeholder="Номер телефона">
-          <input class="feedback__item" type="email" name="email" placeholder="Электронная почта">
-          <textarea class="feedback__item feedback__item--textarea" name="comment" placeholder="Сообщение"></textarea>
-        </form>
-        <p class="feedback__footer"> Нажимая “отправить”, 
-          вы даете согласие на <span class="feedback__footer--pink">обработку</span>  
-          <span class="feedback__footer--pink">персональных данных</span>   и соглашаетесь с нашей
-          <span class="feedback__footer--pink">политикой конфиденциальности</span>
-          </p>
-          <div class="feedback__footer-box">
-            <button class="feedback__footer-btn">
-          <span class="feedback__footer-btn--text">Отправить</span> 
-          <img class="feedback__footer-btn--go" src="img/dropdown.svg" alt="стрелка" />
-        </button>
-          </div>
-      </div>
-    </aside>
-    
-    <aside class="feedback-call">
-      <div class="feedback-call__container">
-        <button class="btn feedback-call__btn">
-          <img src="img/x.svg" alt="значок x" />
-        </button>
-        <form class="feedback-call__area">
-   
-          <h2 class="feedback-call__text">Обратная связь</h2>
-          <input class="feedback__item" type="number" name="number" placeholder="Номер телефона">
-          
-        </form>
-        <p class="feedback-call__footer"> Нажимая “отправить”, 
-          вы даете согласие на <span class="feedback-call__footer--pink">обработку</span>  
-          <span class="feedback-call__footer--pink">персональных данных</span>   и соглашаетесь с нашей
-          <span class="feedback-call__footer--pink">политикой конфиденциальности</span>
-          </p>
-          <div class="feedback-call__footer-box">
-            <button class="feedback-call__footer-btn">
-          <span class="feedback-call__footer-btn--text">Отправить</span> 
-          <img class="feedback-call__footer-btn--go" src="img/dropdown.svg" alt="стрелка" />
-        </button>
-          </div>
-      </div>
-    </aside>
-    <div class="wrapper">
+      </aside>
+   <div class="wrapper__main-content">
     <header class="header">
       <div class="header__container">
         <div class="header__block">
@@ -517,7 +519,7 @@
       </div>
     </footer>
   </div>
-
+</div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="/src/js/index.js"></script>
   </body>
