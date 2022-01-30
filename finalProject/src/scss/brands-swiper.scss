@@ -1,18 +1,15 @@
-.brands-swiper {
+.brands-container {
   min-width: 320px;
   font-size: 14px;
-  font-family: 'TT Lakes', sans-serif;
+  font-family: "TT Lakes", sans-serif;
   font-style: normal;
   margin: 0px;
   background: #f2f2f2;
-  @media (min-width: 1440px) {
-    margin-left: 306px;
-  }
 }
 
 .brands-title {
   width: 100%;
-  background-color: white;
+  background: linear-gradient(90deg, #f8f8f8 1.39%, #ffffff 100%);
   border-top: 1px solid #d9fff5;
 }
 .brands-title__name {
@@ -23,19 +20,25 @@
   line-height: 24px;
   color: #7e7e82;
 }
-.swiper {
+.brands-swiper {
   display: flex;
   width: 320px;
-  height: 160px;
+  height: 140px;
   justify-content: space-between;
 }
-.swiper-wrapper {
+@media (min-width: 480px) {
+  .brands-swiper {
+    width: 75%;
+  }
+}
+.brands-swiper__wrapper {
   background-color: #f2f2f2;
   margin-left: 16px;
   margin-top: 16px;
 }
-.swiper-slide {
-  width: 224px;
+
+.brands-swiper__slide {
+  width: 240px;
   height: 72px;
   background-color: white;
   border-radius: 5px;
@@ -43,30 +46,28 @@
   justify-content: space-between;
   align-items: center;
 }
-.swiper-slide:last-of-type {
+.brands-swiper__slide:last-of-type {
   padding-right: 0;
 }
 
 .swiper__brand-img {
   padding-left: 16px;
 }
-.brands__img {
-  padding-left: 16px;
-}
+
 .swiper__icon--go {
   padding-right: 16px;
 }
-.brands__icon--go {
+.brands-swiper__icon--go {
   padding-right: 16px;
 }
-.swiper-pagination {
+.brands-swiper__pagination {
   transform: translate(0px, -30px);
 }
-.swiper-pagination-bullet-active {
+.brands-swiper__pagination-bullet-active {
   background-color: gray;
 }
 
-.swiper-pagination-bullets {
+.brands-swiper__pagination-bullets {
   color: #b5b6bc;
 }
 
@@ -101,6 +102,7 @@
     width: 224px;
     margin-right: 24px;
     margin-bottom: 16px;
+    padding: 16px;
   }
 
   .brands {
@@ -130,7 +132,7 @@
     color: #1b1c21;
     white-space: nowrap;
     font-size: 16px;
-    font-family: 'TT Lakes', sans-serif;
+    font-family: "TT Lakes", sans-serif;
     font-weight: bold;
     line-height: 18px;
     color: #1b1c21;

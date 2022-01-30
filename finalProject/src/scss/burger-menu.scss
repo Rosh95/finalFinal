@@ -20,7 +20,7 @@ p {
   flex-direction: column;
   justify-content: space-between;
   min-height: 800px;
-  height: 100vh;
+  height: 100%;
   background-color: $color-white;
   min-width: 320px;
   box-shadow: 5px 0px 20px 10px rgba(0, 0, 0, 0.3);
@@ -107,7 +107,7 @@ p {
     left: 0;
     z-index: 2;
     .burger-menu::after {
-      content: '';
+      content: "";
       position: fixed;
       top: 0;
       left: 0;
@@ -149,7 +149,7 @@ p {
 }
 
 .burger-menu__list::before {
-  content: '';
+  content: "";
   position: absolute;
   background: #41f6d7;
   width: 4px;

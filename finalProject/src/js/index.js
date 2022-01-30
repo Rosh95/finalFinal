@@ -1,5 +1,7 @@
 import "../scss/style.scss";
 //import "./swiper";
+import "./pricesSwiper";
+import "./servicesSwiper";
 import "./brandsSwiper";
 import "./openCloseBurgerMenu";
 import "./openCloseFeedback";

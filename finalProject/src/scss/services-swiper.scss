@@ -1,17 +1,14 @@
-.services-swiper {
+.services-container {
   min-width: 320px;
   font-size: 14px;
-  font-family: 'TT Lakes', sans-serif;
+  font-family: "TT Lakes", sans-serif;
   font-style: normal;
   margin: 0px;
   background: #f2f2f2;
-  @media (min-width: 1440px) {
-    margin-left: 306px;
-  }
 }
 .services-title {
   width: 100%;
-  background-color: white;
+  background: linear-gradient(90deg, #f8f8f8 1.39%, #ffffff 100%);
   border-top: 1px solid #d9fff5;
 }
 
@@ -24,13 +21,14 @@
   color: #7e7e82;
 }
 
-.swiper__service--icon-go {
+.services-swiper__icon--go {
   position: relative;
   bottom: 16px;
   right: 16px;
+  align-self: flex-end;
 }
 
-.swiper-slide {
+.services-swiper__slide {
   width: 224px;
   height: 160px;
   background-color: white;
@@ -39,34 +37,40 @@
   justify-content: space-between;
   align-items: center;
 }
-.swiper__service-name {
+.services-swiper__name {
   position: relative;
   top: 16px;
   left: 16px;
+  align-self: flex-start;
 }
-.swiper {
+.services-swiper {
   display: flex;
   width: 320px;
-  height: 260px;
+  height: 228px;
   justify-content: space-between;
 }
-.swiper-wrapper {
+@media (min-width: 480px) {
+  .services-swiper {
+    width: 75%;
+  }
+}
+.services-swiper__wrapper {
   background-color: #f2f2f2;
   margin-left: 16px;
   margin-top: 16px;
 }
 
-.swiper-slide:last-of-type {
+.services-swiper__slide:last-of-type {
   padding-right: 0;
 }
-.swiper-pagination {
+.services-swiper__pagination {
   transform: translate(0px, -30px);
 }
-.swiper-pagination-bullet-active {
+.services-swiper__pagination-bullet-active {
   background-color: gray;
 }
 
-.swiper-pagination-bullets {
+.services-swiper__pagination-bullets {
   color: #b5b6bc;
 }
 
@@ -94,7 +98,7 @@
     width: 100%;
     background: linear-gradient(90deg, #f8f8f8 1.39%, #ffffff 100%);
   }
-  .swiper {
+  .services-swiper {
     display: none;
   }
   .services__item {
@@ -140,7 +144,7 @@
     color: #1b1c21;
     white-space: nowrap;
     font-size: 16px;
-    font-family: 'TT Lakes', sans-serif;
+    font-family: "TT Lakes", sans-serif;
     font-weight: bold;
     line-height: 18px;
     color: #1b1c21;

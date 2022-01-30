@@ -1,10 +1,11 @@
-import Swiper from "swiper";
+//import Swiper from "swiper";
 //import "swiper/css";
 
-export const swiper = new Swiper(".swiper", {
+export const swiper = new Swiper(".brands-swiper", {
   // Optional parameters
 
   loop: true,
+  autoheight: true,
 
   // If we need pagination
   pagination: {

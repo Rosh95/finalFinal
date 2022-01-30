@@ -3,10 +3,12 @@ let feedbackCallAnotherItem = document.querySelector(".header__feedback-call");
 let feedbackCall = document.querySelector(".feedback-call");
 let feedbackCallClose = document.querySelector(".feedback-call__btn");
 let bodyOpacity = document.querySelector(".wrapper__main-content");
+let burgerMenu = document.querySelector(".burger-menu ");
 
 const toggleMenu = function () {
   feedbackCall.classList.toggle("feedback-call--show");
   bodyOpacity.classList.toggle("body-opacity");
+  burgerMenu.classList.toggle("body-opacity");
 };
 
 feedbackCallItem.addEventListener("click", function (e) {
@@ -46,4 +48,5 @@ bodyOpacity.addEventListener("click", function () {
 feedbackCallClose.addEventListener("click", function () {
   feedbackCall.classList.remove("feedback-call--show");
   bodyOpacity.classList.remove("body-opacity");
+  burgerMenu.classList.remove("body-opacity");
 });
