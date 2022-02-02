@@ -18,8 +18,10 @@ document.addEventListener("click", function (e) {
   const its_menu = target == burgerMenu || burgerMenu.contains(target);
   const its_btnMenu = target == burgerMenuItem;
   const menu_is_active = burgerMenu.classList.contains("burger-menu--show");
-
-  if (!its_menu && !its_btnMenu && menu_is_active) {
+  const feedbackCall = document.querySelector(".feedback-call");
+  const its_feedback_call =
+    target == feedbackCall || feedbackCall.contains(target);
+  if (!its_menu && !its_btnMenu && menu_is_active && !its_feedback_call) {
     toggleMenu();
   }
 });
