@@ -17,6 +17,9 @@ p {
 
 .burger-menu {
   display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
   flex-direction: column;
   justify-content: space-between;
   min-height: 800px;
@@ -25,11 +28,44 @@ p {
   min-width: 320px;
   box-shadow: 5px 0px 20px 10px rgba(0, 0, 0, 0.3);
   z-index: 2;
+  background-color: rgba(256, 255, 255, 0.95);
+  width: 100vw;
+  //height: 100vh;
+  @media (min-width: 1440px) {
+    display: flex;
+    justify-content: space-between;
+    width: 306px;
+    box-shadow: none;
+    z-index: 2;
+  }
+  &--show {
+    display: block;
+  }
   &__block {
     padding-left: 24px;
     padding-right: 24px;
   }
   &__container {
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 5px 0px 20px 10px rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+    background-color: $color-white;
+    width: 100%;
+    min-height: 800px;
+    height: 100%;
+    min-width: 320px;
+    @media (min-width: 768px) {
+      width: 320px;
+    }
+    @media (min-width: 1440px) {
+      box-shadow: none;
+      height: 100%;
+    }
+  }
+  &__header {
     display: flex;
     background: #ffffff;
     height: 88px;
@@ -87,15 +123,19 @@ p {
     margin-right: 16px;
   }
   &__footer {
+    position: absolute;
+    top: 590px;
     background-color: $color-white;
     padding-left: 16px;
+    @media (min-width: 768px) {
+      top: 800px;
+    }
     @media (min-width: 1440px) {
-      position: absolute;
       top: 740px;
     }
   }
 }
-.burger-menu {
+/* .burger-menu {
   width: 100%;
   position: absolute;
   top: 0;
@@ -127,7 +167,7 @@ p {
     box-shadow: none;
     z-index: 2;
   }
-}
+} */
 
 .burger-menu--show {
   display: flex;

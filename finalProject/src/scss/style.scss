@@ -459,3 +459,10 @@ button {
     margin-left: 320px;
   }
 }
+.wrapper__main-content--height {
+  height: 780px;
+  overflow: hidden;
+  @media (min-width: 768px) {
+    height: 1024px;
+  }
+}
