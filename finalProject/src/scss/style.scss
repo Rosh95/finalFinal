@@ -16,7 +16,9 @@ html {
 *::before {
   box-sizing: inherit;
 }
-
+::-webkit-scrollbar {
+  display: none;
+}
 @font-face {
   font-family: "Comic";
   src: url("../fonts/comic.ttf") format("truetype");

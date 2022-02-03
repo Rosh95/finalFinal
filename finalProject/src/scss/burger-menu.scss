@@ -92,7 +92,7 @@ p {
   }
   &__item {
     display: flex;
-    margin-left: -5px;
+    // margin-left: -5px;
   }
   &__link {
     display: inline-block;
@@ -103,7 +103,7 @@ p {
     white-space: nowrap;
     padding: 16px 0;
     width: 100%;
-    padding-left: 5px;
+    //padding-left: 5px;
     /*margin-top: auto;
     margin-bottom: auto;*/
     &:hover {
@@ -113,6 +113,7 @@ p {
       transform: scale(1.1);
       cursor: pointer;
       color: black;
+      //font-size: large;
       border-radius: 6px;
       /*padding: 8px 9px 8px 16px;*/
       /*margin-right: -11px;*/
@@ -283,8 +284,8 @@ p {
 .burger-menu__email--link:hover,
 .burger-menu__language--link:hover,
 .btn:hover,
-.burger-menu__phone--link:hover,
-.burger-menu__link:hover {
+.burger-menu__phone--link:hover {
+  //.burger-menu__link:hover {
   border: none;
   transition-duration: 0.4s;
   transform: scale(1.1);
